@@ -1,4 +1,4 @@
-# Exp.No:27  
+# Exp.No:6e  
 ## Operator Overloading
 
 ---
@@ -32,11 +32,31 @@ To write a Python program to perform division of two complex numbers using the b
 ### PROGRAM
 
 ```
-
+class Add:
+    def __init__(self,a):
+        self.a=a
+    def __add__(self,other):
+        if isinstance(self.a,int) and isinstance(other.a,int):
+            print("adding integers :",self.a+other.a)
+        elif isinstance(self.a,str) and isinstance(other.a,str):
+            print("adding strings :",self.a+other.a)
+        else:
+            print("Incompatible types!")
+a=int(input())
+b=int(input())
+c=input()
+d=input()
+a1=Add(a)
+a2=Add(b)
+s1=Add(c)
+s2=Add(d)
+a1+a2
+s1+s2
 ```
 
 ### OUTPUT
 
+<img width="1185" height="378" alt="image" src="https://github.com/user-attachments/assets/fec36867-73b3-47a9-8ab5-34a1712a6ae4" />
 
 ### RESULT
-
+Therefore, the output is the example to write a Python program to perform division of two complex numbers using the binary '/' operator overloading. Class name: Complex, where the objects Ob1 = Complex(10, 21) and Ob2 = Complex(2, 3) represent complex numbers.
